@@ -1,13 +1,24 @@
 module.exports = {
-  title: 'ほげほげ',
-  description: 'なんたらかんたら',
-  base: '',
-  dest: 'dist/',
-  theme: 'ououe',
+  title: "ほげほげ",
+  description: "なんたらかんたら",
+  base: "",
+  dest: "dist/",
+  theme: "ououe",
+  head: [
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=M+PLUS+1p"
+      }
+    ]
+  ],
   themeConfig: {
-    defaultTheme: { dark: [10, 12] },
+    defaultTheme: {
+      dark: [10, 12]
+    },
     showThemeButton: false,
-    cover: '/images/cover.jpg',
+    cover: "/images/cover.jpg",
     //logo: '/logo.png',
     search: false,
     backgroundImage: false,
@@ -16,20 +27,35 @@ module.exports = {
       createTime: false,
       lastUpdated: false,
       options: {
-        dateStyle: 'short',
-        timeStyle: 'short',
+        dateStyle: "short",
+        timeStyle: "short",
         hour12: false,
-        weekday: 'long'
+        weekday: "long"
       }
     },
     nav: [
-      { text: 'Top', link: '/' },
-      { text: 'Posts', link: '/posts/' },
-      { text: 'Tags', link: '/tag/' },
-      { text: 'About', link: '/about/' }
+      {
+        text: "トップ",
+        link: "/"
+      },
+      {
+        text: "記事一覧",
+        link: "/posts/"
+      },
+      {
+        text: "タグ",
+        link: "/tag/"
+      },
+      {
+        text: "About",
+        link: "/about/"
+      }
     ],
     footer: [
-      { text: 'Github', link: 'https://github.com/g-empr' }
+      {
+        text: "Github",
+        link: "https://github.com/g-empr"
+      }
     ]
   }
-}
+};

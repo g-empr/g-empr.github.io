@@ -1,7 +1,9 @@
 # ブログ管理用ブランチ
 
 ## 前提
+
 グローバルに以下のプラグインをインストールしておく。
+
 ```bash
 $ npm i -g gh-pages
 $ npm i -g vuepress
@@ -13,6 +15,7 @@ $ brew install nodebrew
 ```
 
 ## 手順
+
 ```bash
 # パッケージインストール
 $ yarn install
@@ -32,7 +35,7 @@ $ npm run build
 # gh-pagesを使ってdevブランチから直接masterに公開用ファイルだけpush
 $ yarn deploy
 # or (用設定)
-$ npm deploy
+$ npm run ndeploy
 
 ```
 
