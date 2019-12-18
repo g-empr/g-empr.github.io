@@ -4,13 +4,30 @@ module.exports = {
   base: '',
   dest: 'dist/',
   theme: 'ououe',
+  prefetch: false,
+  preload: false,
   themeConfig: {
+    // defaultTheme: { dark: [19, 6] },
+    showThemeButton: false,
     cover: '/cover.jpg',
     logo: '/logo.png',
+    search: false,
     backgroundImage: false,
+    pageGroup: 5,
+    // postTime: {
+    //   createTime: 'Create Time',
+    //   lastUpdated: 'Last Updated',
+    //   options: {
+    //     dateStyle: 'full',
+    //     timeStyle: 'short',
+    //     hour12: false,
+    //     weekday: 'long'
+    //   }
+    // },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Posts', link: '/posts/' },
+      { text: 'Doc', link: '/doc/' },
       { text: 'Tags', link: '/tag/' },
       { text: 'Categories', link: '/category/' },
       { text: 'About', link: '/about/' }
@@ -18,33 +35,5 @@ module.exports = {
     footer: [
       { text: 'Github', link: 'https://github.com/tolking' }
     ]
-  },
-  plugins: [
-    // permalink for posts
-    ['blog-multidir', {
-      postsDir: {
-        posts: 'posts/:year/:month/:day/:slug'
-      }
-    }],
-    // add vuepress-plugin-container
-    ['container', {
-      type: 'right',
-      defaultTitle: ''
-    }],
-    ['container', {
-      type: 'tip',
-      before: info => `<div class="tip"><p class="title">${info}</p>`,
-      after: '</div>'
-    }],
-    ['container', {
-      type: 'warning',
-      before: info => `<div class="warning"><p class="title">${info}</p>`,
-      after: '</div>'
-    }],
-    ['container', {
-      type: 'danger',
-      before: info => `<div class="danger"><p class="title">${info}</p>`,
-      after: '</div>'
-    }]
-  ]
+  }
 }
