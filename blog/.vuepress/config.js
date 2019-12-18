@@ -7,23 +7,23 @@ module.exports = {
   themeConfig: {
     defaultTheme: { dark: [10, 12] },
     showThemeButton: false,
-    cover: '/cover.jpg',
+    cover: '/images/cover.jpg',
     //logo: '/logo.png',
     search: false,
     backgroundImage: false,
     pageGroup: 12,
-    // postTime: {
-    //   createTime: 'Create Time',
-    //   lastUpdated: 'Last Updated',
-    //   options: {
-    //     dateStyle: 'full',
-    //     timeStyle: 'short',
-    //     hour12: false,
-    //     weekday: 'long'
-    //   }
-    // },
+    postTime: {
+      createTime: false,
+      lastUpdated: false,
+      options: {
+        dateStyle: 'short',
+        timeStyle: 'short',
+        hour12: false,
+        weekday: 'long'
+      }
+    },
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'Top', link: '/' },
       { text: 'Posts', link: '/posts/' },
       { text: 'Tags', link: '/tag/' },
       { text: 'About', link: '/about/' }
