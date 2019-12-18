@@ -1,14 +1,14 @@
 module.exports = {
-  title: 'Theme',
-  description: 'theme for Vuepress',
+  title: 'ほげほげ',
+  description: 'なんたらかんたら',
   base: '',
   dest: 'dist/',
   theme: 'ououe',
   themeConfig: {
-    // defaultTheme: { dark: [19, 6] },
+    defaultTheme: { dark: [10, 12] },
     showThemeButton: false,
     cover: '/cover.jpg',
-    logo: '/logo.png',
+    //logo: '/logo.png',
     search: false,
     backgroundImage: false,
     pageGroup: 12,
