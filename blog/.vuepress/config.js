@@ -4,8 +4,6 @@ module.exports = {
   base: '',
   dest: 'dist/',
   theme: 'ououe',
-  prefetch: false,
-  preload: false,
   themeConfig: {
     // defaultTheme: { dark: [19, 6] },
     showThemeButton: false,
@@ -13,7 +11,7 @@ module.exports = {
     logo: '/logo.png',
     search: false,
     backgroundImage: false,
-    pageGroup: 5,
+    pageGroup: 12,
     // postTime: {
     //   createTime: 'Create Time',
     //   lastUpdated: 'Last Updated',
@@ -27,13 +25,11 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Posts', link: '/posts/' },
-      { text: 'Doc', link: '/doc/' },
       { text: 'Tags', link: '/tag/' },
-      { text: 'Categories', link: '/category/' },
       { text: 'About', link: '/about/' }
     ],
     footer: [
-      { text: 'Github', link: 'https://github.com/tolking' }
+      { text: 'Github', link: 'https://github.com/g-empr' }
     ]
   }
 }
