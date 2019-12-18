@@ -12,7 +12,7 @@ $ brew install yarn
 $ brew install nodebrew
 ```
 
-## 手順¥
+## 手順
 ```bash
 # パッケージインストール
 $ yarn install
