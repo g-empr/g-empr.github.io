@@ -7,12 +7,12 @@
     <meta name="description" content="なんたらかんたら">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+1p">
     
-    <link rel="preload" href="/assets/css/0.styles.a3f0faba.css" as="style"><link rel="preload" href="/assets/js/app.499a829c.js" as="script"><link rel="preload" href="/assets/js/4.9c623376.js" as="script"><link rel="prefetch" href="/assets/js/2.523052b1.js"><link rel="prefetch" href="/assets/js/3.014e9e4c.js"><link rel="prefetch" href="/assets/js/5.8f6a2e20.js"><link rel="prefetch" href="/assets/js/6.52dfeabf.js">
+    <link rel="preload" href="/assets/css/0.styles.a3f0faba.css" as="style"><link rel="preload" href="/assets/js/app.2dfbc5d1.js" as="script"><link rel="preload" href="/assets/js/4.184595e6.js" as="script"><link rel="prefetch" href="/assets/js/2.63c72199.js"><link rel="prefetch" href="/assets/js/3.0de06ba4.js"><link rel="prefetch" href="/assets/js/5.3f71c65f.js"><link rel="prefetch" href="/assets/js/6.52dfeabf.js">
     <link rel="stylesheet" href="/assets/css/0.styles.a3f0faba.css">
   </head>
   <body>
-    <div id="app" data-server-rendered="true"><section id="global-layout" data-v-50ab53c8><header class="header" data-v-2012f84a data-v-50ab53c8><div class="header-navbar" data-v-2012f84a><div class="flex-xbc main header-nav" data-v-2012f84a><div class="nav-link" data-v-2012f84a><!----> <nav class="link-list" data-v-2012f84a><a href="/" class="list-item router-link-active" data-v-2012f84a>Top</a><a href="/posts/" class="list-item router-link-active" data-v-2012f84a>Posts</a><a href="/tag/" class="list-item" data-v-2012f84a>Tags</a><a href="/about/" class="list-item" data-v-2012f84a>About</a></nav></div> <!----></div></div> </header> <!----> <section class="page" data-v-50ab53c8 data-v-50ab53c8><section class="info no-bg" data-v-338901da><article class="main info-content" data-v-163b3ecc data-v-338901da><div class="content-header" data-v-163b3ecc><h1 class="header-title" data-v-163b3ecc>ブログ設置までのまとめ</h1></div> <div class="flex-wcc content-tag" data-v-163b3ecc><!----> <!----> <div class="inblock tag-list" data-v-163b3ecc><a href="/tag/備忘録/" class="tag-text" data-v-163b3ecc>備忘録
-      </a></div></div> <div class="content content__default" data-v-163b3ecc><p>このブログ設置までの手順。</p> <h2 id="前提"><a href="#前提" class="header-anchor">#</a> 前提</h2> <ul><li>Mac
+    <div id="app" data-server-rendered="true"><section id="global-layout" data-v-50ab53c8><header class="header" data-v-2012f84a data-v-50ab53c8><div class="header-navbar" data-v-2012f84a><div class="flex-xbc main header-nav" data-v-2012f84a><div class="nav-link" data-v-2012f84a><!----> <nav class="link-list" data-v-2012f84a><a href="/" class="list-item router-link-active" data-v-2012f84a>トップ</a><a href="/posts/" class="list-item router-link-active" data-v-2012f84a>記事一覧</a><a href="/tag/" class="list-item" data-v-2012f84a>タグ</a><a href="/about/" class="list-item" data-v-2012f84a>About</a></nav></div> <!----></div></div> </header> <!----> <section class="page" data-v-50ab53c8 data-v-50ab53c8><section class="info no-bg" data-v-338901da><article class="main info-content" data-v-163b3ecc data-v-338901da><div class="content-header" data-v-163b3ecc><h1 class="header-title" data-v-163b3ecc>ブログ設置までのまとめ</h1></div> <div class="flex-wcc content-tag" data-v-163b3ecc><!----> <!----> <div class="inblock tag-list" data-v-163b3ecc><a href="/tag/備忘録/" class="tag-text" data-v-163b3ecc>備忘録
+      </a></div></div> <div class="content content__default" data-v-163b3ecc><p>このブログ設置までの手順。</p> <img src="/images/posts/img_post2_main.jpg" width="100%"> <h2 id="前提"><a href="#前提" class="header-anchor">#</a> 前提</h2> <ul><li>Mac
 <ul><li>Win でもいける</li></ul></li> <li>Git
 <ul><li>最新版</li></ul></li> <li>npm
 <ul><li>最新版</li></ul></li> <li>GitHub
@@ -23,15 +23,84 @@
 <span class="token builtin class-name">cd</span> vuepress-theme-ououe-template
 </code></pre></div><h2 id="自分のリポジトリ用に初期化。"><a href="#自分のリポジトリ用に初期化。" class="header-anchor">#</a> 自分のリポジトリ用に初期化。</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">rm</span> -rf .git
 <span class="token function">git</span> init
-<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span><span class="token punctuation">;</span><span class="token function">git</span> commit -m <span class="token string">&quot;first commit&quot;</span><span class="token punctuation">;</span><span class="token function">git</span> push
-</code></pre></div><h2 id="dev-build"><a href="#dev-build" class="header-anchor">#</a> dev / build</h2> <p><code>package.json</code>に下記の記述を追加。</p> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+</code></pre></div><p>ついでに公開用ブランチ(master)と編集用ブランチ(dev)に分ける。まず master を認識させる。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span><span class="token punctuation">;</span><span class="token function">git</span> commit -m <span class="token string">&quot;first commit&quot;</span><span class="token punctuation">;</span><span class="token function">git</span> push
+</code></pre></div><p>次に dev ブランチを作る。master のファイルをすべて削除し、commit しておく。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> switch -c dev
+<span class="token function">git</span> switch master
+<span class="token function">ls</span> <span class="token operator">|</span> <span class="token function">grep</span> -v -E <span class="token string">'.git'</span> <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token function">rm</span> -r
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span><span class="token punctuation">;</span><span class="token function">git</span> commit -m <span class="token string">&quot;rm other files&quot;</span><span class="token punctuation">;</span><span class="token function">git</span> push
+</code></pre></div><p>dev ブランチは公開用に push しないが設定などのバックアップを取る意味でも通常の push は行うこと。</p> <h2 id="dev-build"><a href="#dev-build" class="header-anchor">#</a> dev / build</h2> <p><code>package.json</code>に下記の記述を追加。</p> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token comment">// ...</span>
+    <span class="token comment">// -dでpushするディレクトリを指定</span>
+    <span class="token comment">// -bでリモートのどのブランチにpushするかを指定</span>
     <span class="token property">&quot;push&quot;</span><span class="token operator">:</span> <span class="token string">&quot;gh-pages -d dist -b master&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// yarn用デプロイ</span>
     <span class="token property">&quot;deploy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;yarn build &amp;&amp; yarn push&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// npm用デプロイ</span>
     <span class="token property">&quot;ndeploy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run build &amp;&amp; npm run push&quot;</span>
   <span class="token punctuation">}</span>
-</code></pre></div></div> <div class="content-time" data-v-163b3ecc><!----> <!----></div></article> <section class="flex-xb main info-nav" data-v-3eb1f814 data-v-338901da><a href="/posts/3.html" class="flex-xb nav-item" data-v-3eb1f814><div class="flex-xcc item-img" data-v-3eb1f814><img data-src="https://picsum.photos/1920/1080/?random&amp;date=2019-02-20" loading="lazy" alt="display-none" class="img lazy" data-v-3eb1f814></div> <article class="flex-ysc item-content" data-v-3eb1f814><h2 class="content-title" data-v-3eb1f814>display-none</h2> <div class="content" data-v-3eb1f814></div></article></a> <a href="/posts/1.html" class="flex-xb nav-item" data-v-3eb1f814><div class="flex-xcc item-img" data-v-3eb1f814><img data-src="/images/posts/img_post1.png" loading="lazy" alt="新ブログ設置" class="img lazy" data-v-3eb1f814></div> <article class="flex-ysc item-content" data-v-3eb1f814><h2 class="content-title" data-v-3eb1f814>新ブログ設置</h2> <div class="content" data-v-3eb1f814><p>ブログ新規開設。(3度目)</p>
+</code></pre></div><p>yarn なら</p> <div class="language- extra-class"><pre class="language-text"><code>yarn deploy
+</code></pre></div><p>npm なら</p> <div class="language- extra-class"><pre class="language-text"><code>npm run ndeploy
+</code></pre></div><p>でビルドしつつ本番公開用の master に push できるようになる。</p> <h2 id="設定などをいじってみる"><a href="#設定などをいじってみる" class="header-anchor">#</a> 設定などをいじってみる</h2> <p><code>./vuepress/config.js</code>では簡易的にもろもろの値を設定できる。head 内の外部ファイルの読み込みなども指定できる。</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token string">&quot;ほげほげ&quot;</span><span class="token punctuation">,</span>
+  description<span class="token punctuation">:</span> <span class="token string">&quot;なんたらかんたら&quot;</span><span class="token punctuation">,</span>
+  base<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  dest<span class="token punctuation">:</span> <span class="token string">&quot;dist/&quot;</span><span class="token punctuation">,</span>
+  theme<span class="token punctuation">:</span> <span class="token string">&quot;ououe&quot;</span><span class="token punctuation">,</span>
+  head<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">&quot;link&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        rel<span class="token punctuation">:</span> <span class="token string">&quot;stylesheet&quot;</span><span class="token punctuation">,</span>
+        href<span class="token punctuation">:</span> <span class="token string">&quot;https://fonts.googleapis.com/css?family=M+PLUS+1p&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    defaultTheme<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      dark<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    showThemeButton<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    cover<span class="token punctuation">:</span> <span class="token string">&quot;/images/cover.jpg&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">//logo: '/logo.png',</span>
+    search<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    backgroundImage<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    pageGroup<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+    postTime<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      createTime<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      lastUpdated<span class="token punctuation">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    nav<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">&quot;Top&quot;</span><span class="token punctuation">,</span>
+        link<span class="token punctuation">:</span> <span class="token string">&quot;/&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">&quot;Posts&quot;</span><span class="token punctuation">,</span>
+        link<span class="token punctuation">:</span> <span class="token string">&quot;/posts/&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">&quot;Tags&quot;</span><span class="token punctuation">,</span>
+        link<span class="token punctuation">:</span> <span class="token string">&quot;/tag/&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">&quot;About&quot;</span><span class="token punctuation">,</span>
+        link<span class="token punctuation">:</span> <span class="token string">&quot;/about/&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    footer<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token punctuation">:</span> <span class="token string">&quot;Github&quot;</span><span class="token punctuation">,</span>
+        link<span class="token punctuation">:</span> <span class="token string">&quot;https://github.com/g-empr&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>./vuepress/styles/index.styl</code> は全体のカスタムスタイルを記述する stylus ファイル。<br>
+テーマ自体の css をいじらなくてもここである程度見た目を変えることができる。</p> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token selector">body</span>
+  <span class="token property-declaration"><span class="token property">background</span> <span class="token hexcode">#fff</span></span>
+</code></pre></div><p>あとは好きにいじってデプロイして完成。</p> <p>-完-</p></div> <div class="content-time" data-v-163b3ecc><!----> <!----></div></article> <section class="flex-xb main info-nav" data-v-3eb1f814 data-v-338901da><a href="/posts/3.html" class="flex-xb nav-item" data-v-3eb1f814><div class="flex-xcc item-img" data-v-3eb1f814><img data-src="/images/posts/img_post3.png" loading="lazy" alt="サブPC新調" class="img lazy" data-v-3eb1f814></div> <article class="flex-ysc item-content" data-v-3eb1f814><h2 class="content-title" data-v-3eb1f814>サブPC新調</h2> <div class="content" data-v-3eb1f814><p>遅報だけど PC 買いました。</p>
+</div></article></a> <a href="/posts/1.html" class="flex-xb nav-item" data-v-3eb1f814><div class="flex-xcc item-img" data-v-3eb1f814><img data-src="/images/posts/img_post1.png" loading="lazy" alt="新ブログ設置" class="img lazy" data-v-3eb1f814></div> <article class="flex-ysc item-content" data-v-3eb1f814><h2 class="content-title" data-v-3eb1f814>新ブログ設置</h2> <div class="content" data-v-3eb1f814><p>ブログ新規開設。(3 度目)</p>
 </div></article></a></section> <!----></section></section> <footer class="footer" data-v-6126e543 data-v-50ab53c8><nav class="link-list" data-v-6126e543><a href="https://github.com/g-empr" target="_blank" rel="noopener noreferrer" class="list-item" data-v-6126e543>Github</a></nav> <a href="/" class="copyright router-link-active" data-v-6126e543>ほげほげ © 2019</a></footer></section><div class="global-ui"><!----><div class="reading-progress top" data-v-56679cca><div class="progress" data-v-56679cca></div></div></div></div>
-    <script src="/assets/js/app.499a829c.js" defer></script><script src="/assets/js/4.9c623376.js" defer></script>
+    <script src="/assets/js/app.2dfbc5d1.js" defer></script><script src="/assets/js/4.184595e6.js" defer></script>
   </body>
 </html>
