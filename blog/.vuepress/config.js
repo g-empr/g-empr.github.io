@@ -24,13 +24,13 @@ module.exports = {
     backgroundImage: false,
     pageGroup: 12,
     postTime: {
-      createTime: false,
+      createTime: '記事更新',
       lastUpdated: false,
       options: {
         dateStyle: "short",
         timeStyle: "short",
         hour12: false,
-        weekday: "long"
+        timeZone: "Asia/Tokyo"
       }
     },
     nav: [
