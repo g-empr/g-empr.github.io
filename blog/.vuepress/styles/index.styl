@@ -5,5 +5,23 @@
   margin 0
   width 100%
 
+.page a[target] img
+  transition all linear .2s
+  &:hover
+    transform scale(1.1)
+
+.content-tags a:before
+.content-tag .tag-list a.tag-text:before
+  content "#"
+
 body
   font-family: "M PLUS Rounded 1c";
+
+.list .list-item .item-img
+  height 12.666666666666666rem
+  background #fff
+
+@media (prefers-color-scheme: dark)
+  #global-layout
+  .footer
+    background #3c4c5f !important

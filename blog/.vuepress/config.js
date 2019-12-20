@@ -53,7 +53,7 @@ module.exports = {
     ],
     footer: [
       {
-        text: "Github",
+        text: "g-empr@Github",
         link: "https://github.com/g-empr"
       }
     ]
