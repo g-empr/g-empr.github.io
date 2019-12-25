@@ -1,5 +1,5 @@
 module.exports = {
-  title: "ほげほげ",
+  title: "じごくへん",
   description: "なんたらかんたら",
   base: "",
   dest: "dist/",
