@@ -20,7 +20,7 @@
     "dev": "vuepress dev blog",
     "build": "vuepress build blog",
     "push": "gh-pages -d dist -b master",
-    "deploy": "yarn build && yarn push",
+    "deploy": "yarn build && yarn push && git add . && git commit -m 'update' && git push",
     "ndeploy": "npm run build && npm run push && git add . && git commit -m 'update' && git push"
   },
   "dependencies": {
