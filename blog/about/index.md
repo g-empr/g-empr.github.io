@@ -16,41 +16,31 @@ layout: Page
 
 雑多に書き連ねます。
 
-あんまり使ってないけど[Twitter](https://twitter.com/g_empr)とかもやってます。
+あんまり使ってないけど [Twitter](https://twitter.com/g_empr) とかもやってます。
 
 <br>
 
 ### ゲーム系アカウント
+
 <div class="prfBox">
   <div class="prfItem">
   <a href="https://discord.gg/DHFHmsk" target="_blank"><img src="/images/posts/dis.png" height="120"></a>
-  <textarea class="ac">getter.io#9390</textarea>
+  <div class="ac">getter.io#9390</div>
   </div>
   <div class="prfItem">
   <a href="https://www.blizzard.com/ja-jp/" target="_blank"><img src="/images/posts/bli.png" height="120"></a>
-  <textarea class="ac">getter#1341</textarea>
+  <div class="ac">getter#1341</div>
   </div>
   <div class="prfItem">
   <a href="https://steamcommunity.com/id/g_empr/" target="_blank"><img src="/images/posts/st.png" height="120"></a>
-  <textarea class="ac">g_empr</textarea>
+  <div class="ac">g_empr</div>
   </div>
   <div class="prfItem">
   <a href="https://www.jp.playstation.com/psn/" target="_blank"><img src="/images/posts/ps.png" height="120"></a>
-  <textarea class="ac">getterrobo2</textarea>
+  <div class="ac">getterrobo2</div>
   </div>
   <div class="prfItem">
   <a href="https://www.nintendo.co.jp/hardware/switch/" target="_blank"><img src="/images/posts/ns.jpg" height="120"></a>
-  <textarea class="ac">SW-5741-7158-6995</textarea>
+  <div class="ac">SW-5741-7158-6995</div>
   </div>
 </div>
-<script>
-  const clip = document.querySelectorAll(".ac");
-  for (let i = 0; i < clip.length; i++) {
-    clip[i].addEventListener("click", function(){
-      let txt = clip[i];
-      txt.select();
-      document.execCommand("copy");
-      console.log("copied");
-    })
-  }
-</script>

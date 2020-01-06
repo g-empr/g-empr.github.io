@@ -1,6 +1,6 @@
 module.exports = {
   title: "じごくへん",
-  description: "なんたらかんたら",
+  description: "",
   base: "",
   dest: "dist/",
   theme: "ououe",
@@ -19,13 +19,13 @@ module.exports = {
     },
     showThemeButton: false,
     cover: "/images/cover.jpg",
-    //logo: '/logo.png',
+    logo: '/images/logo.png',
     search: false,
     backgroundImage: false,
     pageGroup: 12,
     postTime: {
-      createTime: '記事更新',
-      lastUpdated: false,
+      createTime: '記事追加',
+      lastUpdated: '最終更新',
       options: {
         dateStyle: "short",
         timeStyle: "short",
@@ -57,5 +57,35 @@ module.exports = {
         link: "https://github.com/g-empr"
       }
     ]
-  }
+  },
+  plugins: [
+    // you can use this plugin multiple times
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'right',
+        defaultTitle: '',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'theorem',
+        before: info => `<div class="theorem"><p class="title">${info}</p>`,
+        after: '</div>',
+      },
+    ],
+
+    // this is how VuePress Default Theme use this plugin
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'tip',
+        defaultTitle: {
+          '/': 'TIP',
+          '/zh/': '提示',
+        },
+      },
+    ],
+  ],
 };

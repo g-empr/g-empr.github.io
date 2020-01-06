@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "vuepress": "^1.2.0",
-    "vuepress-plugin-container": "^2.1.1",
+    "vuepress-plugin-container": "^2.1.2",
     "vuepress-theme-ououe": "^1.4.1"
   }
 }
