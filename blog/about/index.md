@@ -6,7 +6,7 @@ layout: Page
   <div style="text-align:center;color:#fff;margin-bottom:15px;">
     書いてる人
   </div>
-  <div style="text-align:center">
+  <div class="prfImg" style="text-align:center">
     <img src="/images/prf.jpg" width="200" style="border-radius:100%">
   </div>
   <div style="text-align:center;color:#fff">

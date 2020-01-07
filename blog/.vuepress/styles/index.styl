@@ -59,7 +59,6 @@ body h3:not(.item-text):before {
 
 .prfBox .prfItem {
     text-align center
-    flex 1 1
     margin 20px 10px 15px
     width 150px
     max-width 150px
@@ -73,7 +72,6 @@ body h3:not(.item-text):before {
     cursor pointer
     width 100%
     box-sizing border-box
-    font-size px
     resize none
     text-align center
     height auto
@@ -138,9 +136,28 @@ body h3:not(.item-text):before {
 @media (max-width 425px) {
     img {
         width 100% !important
+        height auto
     }
+
     div {
         font-size:1em!important
+    }
+
+    h1 {
+        padding 0
+        font-size 1.8em!important
+    }
+
+    h2 {
+        font-size 1.4em!important
+    }
+
+    h3 {
+        font-size 1.1em!important
+    }
+
+    a,li,p {
+        font-size .9em!important
     }
 
     .content-header {
@@ -162,21 +179,12 @@ body h3:not(.item-text):before {
         box-sizing border-box
     }
 
-    h1 {
-        padding 0
-        font-size 1.8em!important
+    .prfImg {
+        padding 30px
     }
 
-    h2 {
-        font-size 1.4em!important
-    }
-
-    h3 {
-        font-size 1.1em!important
-    }
-
-    a,li,p {
-        font-size .9em!important
+    .prfBox .prfItem .ac {
+        font-size 11px !important
     }
 }
 
