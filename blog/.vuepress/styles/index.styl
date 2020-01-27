@@ -1,37 +1,43 @@
-.header-title {
+.header-title
     text-decoration underline
-}
 
-.link-logo {
+
+section .content__default > p:first-child
     display none
-}
 
-.list .list-item:hover .item-content .content-title:after {
+section.page .content__default > img
+    max-width 550px
+
+.link-logo
+    display none
+
+
+.list .list-item:hover .item-content .content-title:after
     margin 0
     width 100%
-}
 
-.list .list-item .item-content .content-categories .item-text,.list .list-item .item-content .content-tags .item-text {
+
+.list .list-item .item-content .content-categories .item-text,.list .list-item .item-content .content-tags .item-text
     color #777!important
-}
 
-.content-tag .tag-list a.tag-text:before,.content-tags a:before {
+
+.content-tag .tag-list a.tag-text:before,.content-tags a:before
     content "#"
-}
 
-body {
+
+body
     font-family "M PLUS Rounded 1c"
-}
 
-body h2:not(.cover-text) {
+
+body h2:not(.cover-text)
     color #3eaf7c!important
-}
 
-body h3:not(.item-text) {
+
+body h3:not(.item-text)
     line-height 1.5!important
-}
 
-body h3:not(.item-text):before {
+
+body h3:not(.item-text):before
     content ""
     display inline-block
     background-color #3eaf7c
@@ -40,35 +46,35 @@ body h3:not(.item-text):before {
     line-height 1
     vertical-align top
     margin-right 3px
-}
 
-.list .list-item .item-img {
+
+.list .list-item .item-img
     height 12.666666666666666rem
     background #fff
-}
 
-.icon.outbound {
+
+.icon.outbound
     margin-left 3px
-}
 
-.prfBox {
+
+.prfBox
     display flex
     flex-wrap wrap
     justify-content space-evenly
-}
 
-.prfBox .prfItem {
+
+.prfBox .prfItem
     text-align center
     margin 20px 10px 15px
     width 150px
     max-width 150px
-}
 
-.prfBox .prfItem img {
+
+.prfBox .prfItem img
     border-radius 100%
-}
 
-.prfBox .prfItem .ac {
+
+.prfBox .prfItem .ac
     cursor pointer
     width 100%
     box-sizing border-box
@@ -84,137 +90,136 @@ body h3:not(.item-text):before {
     font-weight 700
     position relative
     border-radius 10px 0 10px 0/10px 0 10px 0
-}
 
-.prfBox .prfItem .ac:focus {
+
+.prfBox .prfItem .ac:focus
     outline none
-}
 
-.prfBox .prfItem .ac span {
+
+.prfBox .prfItem .ac span
     background-color #aaa
     display inline-block
-}
 
-.prfBox .prfItem .ac:before {
+
+.prfBox .prfItem .ac:before
     top 0
     right 0
     border-radius 12px 0 12px 12px/12px 0 12px 12px
-}
 
-.prfBox .prfItem .ac:after,.prfBox .prfItem .ac:before {
+
+.prfBox .prfItem .ac:after,.prfBox .prfItem .ac:before
     content ""
     display inline-block
     position absolute
     width 12px
     height 12px
     background-color #222
-}
 
-.prfBox .prfItem .ac:after {
+
+.prfBox .prfItem .ac:after
     bottom 0
     left 0
     border-radius 12px 12px 12px 0/12px 12px 12px 0
-}
 
-@media (prefers-color-scheme:dark) {
-    #global-layout,.footer {
-        background #3c4c5f !important
-    }
-}
 
-@media (max-width 600px) {
-    .content-time {
+@media (prefers-color-scheme:dark)
+    #global-layout,.footer
+        background #0C4C70 !important
+
+
+
+@media (max-width 600px)
+    .content-time
         padding-bottom:10px!important
-    }
 
-    .time-text {
+
+    .time-text
         text-align center
         font-size 12px!important
-    }
-}
 
-@media (max-width 425px) {
-    img {
+
+
+@media (max-width 425px)
+    img
         width 100% !important
         height auto
-    }
 
-    div {
+
+    div
         font-size:1em!important
-    }
 
-    h1 {
+
+    h1
         padding 0
         font-size 1.8em!important
-    }
 
-    h2 {
+
+    h2
         font-size 1.4em!important
-    }
 
-    h3 {
+
+    h3
         font-size 1.1em!important
-    }
 
-    a,li,p {
+
+    a,li,p
         font-size .9em!important
-    }
 
-    .content-header {
+
+    .content-header
         padding-top 1em!important
-    }
 
-    .flex-wbc {
+
+    .flex-wbc
         justify-content center
-    }
 
-    .cover-header {
+
+    .cover-header
         height 20rem!important
-    }
 
-    .cover-title {
+
+    .cover-title
         width 100%
         height auto
         padding 0 20px
         box-sizing border-box
-    }
 
-    .prfImg {
+
+    .prfImg
         padding 30px
-    }
 
-    .prfBox .prfItem .ac {
+
+    .prfBox .prfItem .ac
         font-size 11px !important
-    }
-}
 
-.custom-block {
+
+
+.custom-block
     padding .1rem 1.5rem
     border-left-width .5rem
     border-left-style solid
     margin 1rem 0
-}
 
-.custom-block p {
+
+.custom-block p
     font-size 16px
     margin 0
-}
 
-.custom-block p:last-child {
+
+.custom-block p:last-child
     margin-bottom 1em
-}
 
-.custom-block-title {
+
+.custom-block-title
     font-weight 600
     margin-bottom -.4rem
     margin-top 16px!important
-}
 
-.custom-block-title:after {
+
+.custom-block-title:after
     content " :"
-}
 
-.custom-block.tip {
+
+.custom-block.tip
     background-color hsla(0,0%,100%,.05)
     border-color #42b983
-}
